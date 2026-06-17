@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP判题工具 - 百川作业帮智能判题助手</title>
+    <style>
+        :root { --blue: #4a90d9; --dark: #2c3e50; --gray: #7f8c8d; --bg: #f8fafc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif; color: var(--dark); background: var(--bg); }
+        section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
+        h2 { text-align: center; font-size: 28px; margin-bottom: 40px; }
+        h2 span { color: var(--blue); }
+        .btn { display: inline-block; padding: 14px 40px; border-radius: 50px; font-size: 16px; font-weight: 600; text-decoration: none; cursor: pointer; border: none; transition: .2s; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 40%, #0f3460 100%); text-align: center; color: #fff; padding: 80px 20px; }
+        .hero .icon { font-size: 56px; margin-bottom: 16px; }
+        .hero h1 { font-size: 36px; font-weight: 700; margin-bottom: 12px; }
+        .hero .sub { font-size: 16px; color: #a0b4cc; margin-bottom: 30px; max-width: 500px; margin-inline: auto; line-height: 1.6; }
+        .hero .ver { display: inline-block; background: rgba(255,255,255,.12); padding: 4px 14px; border-radius: 20px; font-size: 13px; color: #8ea8cc; margin-bottom: 24px; }
+        .hero .btn-primary { background: linear-gradient(135deg, #4a90d9, #357abd); color: #fff; box-shadow: 0 4px 20px rgba(74,144,217,.4); }
+        .hero .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 28px rgba(74,144,217,.6); }
+        .hero .note { display: block; margin-top: 16px; font-size: 12px; color: #5a7a9a; }
+
+        /* Features */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 20px; }
+        .feat { background: #fff; border-radius: 14px; padding: 28px 24px; box-shadow: 0 2px 12px rgba(0,0,0,.04); transition: transform .2s; }
+        .feat:hover { transform: translateY(-4px); }
+        .feat .f-icon { font-size: 36px; margin-bottom: 14px; }
+        .feat h3 { font-size: 16px; margin-bottom: 8px; }
+        .feat p { font-size: 13px; color: var(--gray); line-height: 1.7; }
+
+        /* How to use */
+        .steps { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .step { flex: 0 0 220px; text-align: center; }
+        .step .num { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; background: var(--blue); color: #fff; border-radius: 50%; font-size: 20px; font-weight: 700; margin-bottom: 12px; }
+        .step h4 { font-size: 15px; margin-bottom: 6px; }
+        .step p { font-size: 12px; color: var(--gray); }
+
+        /* Tech */
+        .tech-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .tech-card { background: #fff; border-left: 3px solid var(--blue); border-radius: 0 12px 12px 0; padding: 20px 24px; box-shadow: 0 2px 8px rgba(0,0,0,.03); }
+        .tech-card h3 { font-size: 15px; margin-bottom: 8px; color: var(--blue); }
+        .tech-card p { font-size: 13px; color: var(--gray); line-height: 1.7; }
+
+        /* CTA */
+        .cta { background: linear-gradient(135deg, #0f3460, #1a1a2e); text-align: center; color: #fff; border-radius: 20px; margin: 40px 20px 0; padding: 50px 30px; }
+        .cta h2 { color: #fff; margin-bottom: 12px; }
+        .cta p { color: #a0b4cc; margin-bottom: 24px; font-size: 14px; }
+        .cta .btn-primary { font-size: 18px; padding: 16px 50px; }
+        .cta .reqs { margin-top: 28px; font-size: 12px; color: #5a7a9a; line-height: 1.8; }
+
+        footer { text-align: center; padding: 30px; font-size: 12px; color: #bbb; }
+    </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="icon">&#x1F4E6;</div>
+    <h1>VIP判题工具</h1>
+    <p class="sub">基于大语言视觉模型的百川作业帮自动判题助手<br>截图 → AI 比对 → 自动提交，全流程自动化</p>
+    <span class="ver">v10 / 2026.06.11</span><br>
+    <a class="btn btn-primary" href="https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v10/Xunfei10.zip" download>立即下载（141MB）</a>
+    <span class="note">※ 解压双击「启动讯飞10.bat」即可使用</span>
+</section>
+
+<!-- Features -->
+<section>
+    <h2>为什么选择 <span>VIP判题工具</span>？</h2>
+    <div class="features">
+        <div class="feat">
+            <div class="f-icon">&#x1F9E0;</div>
+            <h3>AI 视觉比对</h3>
+            <p>接入讯飞星辰 MaaS Qwen3.5 视觉模型，截图子题与母题后自动判断是否为同一道题。视觉投票制兜底，多轮比对确保准确率。</p>
+        </div>
+        <div class="feat">
+            <div class="f-icon">&#x26A1;</div>
+            <h3>全自动操作</h3>
+            <p>从抢任务 → 截图 → AI 判题 → 点击提交，全流程自动化。鼠标悬停、点击、滚动完全模拟真人行为，智能躲避反爬检测。</p>
+        </div>
+        <div class="feat">
+            <div class="f-icon">&#x1F6E1;</div>
+            <h3>滑块验证码识别</h3>
+            <p>自动检测滑块验证码，全页截图发送第三方识别服务，实时计算拖拽距离，CDP 协议模拟真人拖拽轨迹自动通过验证。</p>
+        </div>
+        <div class="feat">
+            <div class="f-icon">&#x1F4A1;</div>
+            <h3>智能容错</h3>
+            <p>讯飞服务繁忙自动重试，页面空白等待重载，弹窗遮挡自动关闭，任务列表丢失自动导航恢复。断点都不怕。</p>
+        </div>
+        <div class="feat">
+            <div class="f-icon">&#x1F4BB;</div>
+            <h3>精美桌面应用</h3>
+            <p>PySide6 Qt 界面，淡蓝色调，窗口自适应屏幕右侧。做题计数跨会话累计不归零，配置自动持久化存储。</p>
+        </div>
+        <div class="feat">
+            <div class="f-icon">&#x1F4E4;</div>
+            <h3>开箱即用</h3>
+            <p>API Key、蜂玩密码串、软件 KEY 均已内置，无需任何配置。解压双击即用，无需安装 Python 环境。</p>
+        </div>
+    </div>
+</section>
+
+<!-- How to use -->
+<section>
+    <h2><span>三步</span>开始</h2>
+    <div class="steps">
+        <div class="step">
+            <div class="num">1</div>
+            <h4>下载解压</h4>
+            <p>下载 zip 包，解压到任意目录</p>
+        </div>
+        <div class="step">
+            <div class="num">2</div>
+            <h4>启动程序</h4>
+            <p>双击「启动讯飞10.bat」</p>
+        </div>
+        <div class="step">
+            <div class="num">3</div>
+            <h4>登录百川</h4>
+            <p>浏览器弹出后手动登录，程序检测到登录后自动开始判题</p>
+        </div>
+    </div>
+</section>
+
+<!-- Tech -->
+<section>
+    <h2>技术 <span>亮点</span></h2>
+    <div class="tech-grid">
+        <div class="tech-card">
+            <h3>视觉投票制兜底链</h3>
+            <p>2~3 次视觉比对投票决出多数结果，全失败兜底判不同题。Engine Busy 自动重试，间隔递增降温。</p>
+        </div>
+        <div class="tech-card">
+            <h3>Browser Automation</h3>
+            <p>DrissionPage + CDP 协议驱动 Chrome，UA 伪装、webdriver 隐藏、跨域 iframe 穿透。随机延迟、缓动曲线模拟真人操作。</p>
+        </div>
+        <div class="tech-card">
+            <h3>提示词工程</h3>
+            <p>基于官方培训 PPT 精简优化，10 条相同规则 + 6 条不同规则 + 6 条特殊边界 case。严格按判题步骤逐级检查，命中即输出。</p>
+        </div>
+        <div class="tech-card">
+            <h3>工程化打包</h3>
+            <p>PyInstaller 打包为独立 exe（141MB），含完整 Python 运行时 + Qt 库。英文 exe + 中文启动脚本兼容中文路径问题。</p>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<div class="cta">
+    <h2>开始提升判题效率</h2>
+    <p>已内置所有凭据，下载即用。支持 Windows 10 / 11</p>
+    <a class="btn btn-primary" href="https://github.com/YOUR_USERNAME/YOUR_REPO/releases/download/v10/Xunfei10.zip" download>立即下载</a>
+    <div class="reqs">
+        版本 v10 · 大小 141MB · 需安装 Chrome 浏览器<br>
+        遇到问题？将 cmd 中的报错信息或截图发给开发者
+    </div>
+</div>
+
+<footer>&copy; 2026 VIP判题工具</footer>
+
+</body>
+</html>
